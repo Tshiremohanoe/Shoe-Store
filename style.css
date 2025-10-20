@@ -1,0 +1,252 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+}
+
+header {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav {
+    position: relative;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ff9900;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('https://images.unsplash.com/photo-1528701800484-1864f668fac1') no-repeat center center/cover;
+    color:#e0f8fb;
+    background-color:#060000;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #ff9900;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #111;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+img{
+    height: 150px;
+    width: 100px;}
+.shoe-grid{
+display: grid;
+grid-template-columns:repeat(auto-fit,minmax (150px,1fr));
+gap: 30px;
+padding: 30px 20px;
+}
+.shoe-items{
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 1.0);
+transition: transform 0.3s ease,box-shadow 0.3s ease;
+text-align: center;
+padding: 15px
+}
+.shoe-items h3{
+    margin: 10px 0;
+    color: #ff9900;
+}
+.shoe-items p{
+font-size: 0.95rem;
+color: #ff9900;
+}
+.shoe-items img{
+width: 20%;
+height: 10%;
+object-fit: cover;
+border-bottom: 2px solid#ff69b4;
+border-radius: 8px;
+}
+.shoe-items a:hover{
+    background: #ff6600;
+    color: #fff;
+}
+.shoe-items:hover{
+transform: translate(-5px);
+box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+.list-grid{
+display: grid;
+grid-template-rows:repeat(auto-fit,minmax (150px,1fr));
+gap: 30px;
+padding: 30px 20px;
+}
+img{
+    height: 150px;
+    width: 100px;
+}
+.list-items{
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 1.0);
+transition: transform 0.3s ease,box-shadow 0.3s ease;
+text-align: center;
+padding: 15px
+}
+.list-items h3{
+    margin: 10px 0;
+    color: #ff9900;
+}
+.shoe-items img{
+width: 20%;
+height: 10%;
+object-fit: cover;
+border-bottom: 2px solid#ff69b4;
+border-radius: 8px;
+}
+Contact
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+form {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #f59e0b; /* Orange color highlight */
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+button {
+    background-color: #f59e0b;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e08900;
+}
+.get-in-touch {
+    text-align: center;
+    margin-top: 40px;
+    color: #333;
+}
+
+.get-in-touch b {
+    color: #333;
+}
